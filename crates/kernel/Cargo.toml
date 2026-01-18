@@ -1,0 +1,21 @@
+[package]
+name = "kernel"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+microkernel = { path = "../microkernel" }
+control-plane = { path = "../control-plane" }
+async-trait = "0.1.82"
+bytes = "1.7.1"
+futures-core = "0.3.30"
+futures-util = "0.3.30"
+reqwest = { version = "0.12.7", default-features = false, features = ["json", "stream", "rustls-tls"] }
+tracing = "0.1.40"
+thiserror = "1.0.60"
+uuid = { version = "1.6.1", features = ["v4"] }
+rand = "0.8.5"
+regex = "1.10.6"
+
+[dev-dependencies]
+tokio = { version = "1.40.0", features = ["macros", "rt-multi-thread"] }

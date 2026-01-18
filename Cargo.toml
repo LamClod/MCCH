@@ -1,0 +1,9 @@
+[workspace]
+members = [
+  "crates/microkernel",
+  "crates/control-plane",
+  "crates/kernel",
+  "crates/kernel-space",
+  "crates/mcch-server"
+]
+resolver = "2"

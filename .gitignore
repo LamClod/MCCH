@@ -1,0 +1,29 @@
+# Rust 编译产物
+/target/
+**/target/
+**/*.rs.bk
+Cargo.lock
+
+# 数据库文件
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# 配置文件 (包含敏感信息)
+system.toml
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+nul
+
+# 日志
+*.log
+logs/

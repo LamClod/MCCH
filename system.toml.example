@@ -1,0 +1,6 @@
+storage = { dsn = "", sqlite_path = "mcch.sqlite" }
+cache = { redis_url = "" }
+tsdb = { endpoint = "", sqlite_path = "mcch_tsdb.sqlite", timeout_ms = 1000 }
+security = { kernel_token = "change-me", master_key = "" }
+runtime = { thread_pool = 8, cache_ttl_seconds = 30 }
+bootstrap = { seed_on_start = true }
